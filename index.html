@@ -59,12 +59,21 @@
          <div class="panel">
             <div class="panel-all">
                 <i class="fa-solid fa-bars"></i>
-                <select class="search-select">
-                    <option>All</option>
-                    <option>Account</option>
-                    <option>Order</option>
-                    <option>Track your order</option>
-                    <option>Return</option>
+               
+                <script>                      <!--javascript for dropdown and hyper link-->
+                    function goToLink(select) {
+                        var url = select.value;
+                        if (url) {
+                            window.location.href = url;
+                        }
+                    }
+                </script>
+                <select onchange="goToLink(this)">
+                    <option value="#"target="_main">All</option>
+                    <option value="account.html"target="_main">Account</option>  
+                    <option value="#"target="_main">Order</option>                  
+                    <option value="#"target="_main">Track your order</option>
+                    <option value="#"target="_main">Return</option>
                 </select>
             </div>
             <div class="panel-ops">
