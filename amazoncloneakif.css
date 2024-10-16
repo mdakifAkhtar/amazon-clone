@@ -126,7 +126,14 @@ span{
     display:flex ;
     justify-content:center ;
     align-items:flex-end ;
-
+    animation:slider 19s step-start infinite ;
+}
+@keyframes slider{
+    0%{background-image:url(front3.jpg) ;}
+    25%{background-image:url(front1.jpg) ;}
+    49%{background-image:url(frontpage.jpg) ;}
+    74%{background-image:url(front2.jpg) ;}
+    100%{background-image:url(front3.jpg) ;}
 }
 .hero-msg{
     background-color: #cccccc;
@@ -138,7 +145,6 @@ span{
     font-size:0.85rem ;
     width:80%;
     margin-bottom:25px ;
-
 }
 .hero-msg a{
     color:#007185;
