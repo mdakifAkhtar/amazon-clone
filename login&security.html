@@ -4,29 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login&security</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <style>
         h3{
             background-color:#f08804;
-            border-radius:9px ;
-            height:100%;
-            width:39%;
+            height:39px;
+            width:100%;
             display:grid;
             place-items:center ;
+            border-radius:12px ;
         }
-        use:hover{
-            background-color:red;
+        .box{
+            height:309px;
+            width:275px; 
+            background-color: antiquewhite;
+            margin-left:49%;
+            border-radius:19px ;
+            box-shadow:5px 5px 7px rgb(179, 168, 148),-5px -5px 7px wheat ; 
+
+        }
+        input[type=text]{
+            border-radius:15px ;
+            height:29px ;
+            width:229px ;
+            margin-left:21px  ;
+            border: 2px solid whitesmoke;
+            box-shadow:5px 5px 7px wheat,-5px -5px 7px wheat  ;
+            text-align: center;
+            margin-top:15px ;
+        }
+        button:active{
+            background-color: rgb(115, 110, 103);
+        }
+        input[type=submit]:active{
+            background-color: rgb(115, 110, 103);
+        }
+        input[type=password]{
+            border-radius:15px ;
+            height:29px ;
+            width:229px ;
+            margin-left:21px  ;
+            border: 2px solid whitesmoke;
+            box-shadow:5px 5px 7px wheat,-5px -5px 7px wheat ; 
+            text-align: center;
+        }
+        h5{
+            margin-left:49px  ;
+            margin-top:9px ;
+            
+        }
+        input[type=submit]{
+            border-radius:15px ;
+            height:29px ;
+            width:229px ;
+            margin-left:21px  ;
+            border: 2px solid whitesmoke;
+            box-shadow:5px 5px 7px wheat,-5px -5px 7px wheat  ;
+            text-align: center;
+            margin-top:15px ;
+        }
+        input[type=checkbox]{
+            margin-left:24px  ;
+            margin-top:9px ;
+        }
+        button{
+            border-radius:13px ;
+            border: 1px solid antiquewhite;
+        }
+        .fa-user,.fa-lock{
+            position: relative;
+            right:29px ;
         }
     </style>
+
 </head>
 <body>
+    <div class="box">
     <h3>Login & Security</h3>
     <form>
-        <label class="username">User Name</label>
-        <input class="use" type="text"name="User Name"size="20"placeholder="enter your Mob/E.mail id"> <br><br>
-        <label>Password</label>
-        <input type="password"name="Password"size="21"placeholder="enter Amazon Password">
-        <input type="submit">
-        <input type="Reset">
+        <input type="text"placeholder="Enter your Mob/E.mail"><i class="fa-solid fa-user"></i><br><br><br>
+        <input type="password"placeholder="Enter Amazon Password"><i class="fa-solid fa-lock"></i> <br>
+        <input type="checkbox">Remember me <button type="submit">Forget Password</button>
+        <input type="submit"value="Login">
+        <h5>Dont't have a account?Signup</h5>
+
     </form>
+    </div>
 </body>
 </html>
